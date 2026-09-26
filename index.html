@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Video supplement for Skill-Space Shooting for Autonomous Robot Policy Improvement. Compare policy-only robot evaluations across training iterations and five tasks.">
+  <meta property="og:title" content="Skill-Space Shooting for Autonomous Robot Policy Improvement">
+  <meta property="og:description" content="Anonymous ICLR 2027 Submission. Video comparisons of policy-only robot evaluations.">
+  <meta property="og:url" content="https://skill-space-shooting.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://skill-space-shooting.github.io/assets/posters/stackthree-comparison.jpg">
+  <title>Skill-Space Shooting for Autonomous Robot Policy Improvement</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/nerfies/bulma.min.css">
+  <link rel="stylesheet" href="assets/vendor/nerfies/index.css">
+  <link rel="stylesheet" href="assets/vendor/nerfies/fonts.css">
+  <link rel="stylesheet" href="style.css?v=80545e3da239">
+  <script src="app.js?v=7607041be96c" defer></script>
+</head>
+<body>
+  <main>
+    <section class="hero publication-header" aria-labelledby="publication-title">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title" id="publication-title">Skill-Space Shooting for Autonomous Robot Policy Improvement</h1>
+              <p class="is-size-5 publication-authors"><span class="author-block">Anonymous ICLR 2027 Submission</span></p>
+              <p class="publication-supplement">Video supplement <span aria-hidden="true">·</span> Policy-only evaluations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evaluation-section">
+      <div class="container evaluation-container">
+        <nav class="task-nav" aria-label="Choose a task" id="task-nav"></nav>
+        <section class="experiment" aria-labelledby="task-title">
+          <div class="task-heading">
+            <div>
+              <p class="task-category" id="task-kind"></p>
+              <h2 class="title is-3" id="task-title"></h2>
+              <p id="task-description"></p>
+            </div>
+            <span class="task-counter" id="task-counter"></span>
+          </div>
+          <div class="watch-toolbar">
+            <div class="watch-actions">
+              <button type="button" class="primary-action" id="play-comparison"><span aria-hidden="true">▶</span> Play comparison</button>
+            </div>
+            <div class="playback-actions">
+              <button type="button" class="pause-action" id="pause-player">Play</button>
+              <button type="button" class="pause-action" id="fullscreen-player">Fullscreen</button>
+            </div>
+          </div>
+          <div class="players" id="players"></div>
+          <div class="reading-note"><p id="task-story"></p></div>
+          <p class="sequence-note">Methods stay side by side. After the shared initial comparison where shown, only the blue-outlined evaluation plays; the others remain frozen. Context runs at 4× or 8×; captioned highlights play at 1×.</p>
+        </section>
+        <section class="how-to-read content" aria-labelledby="reading-title">
+          <h3 id="reading-title">Interpreting These Videos</h3>
+          <p>These are policy-only evaluations, without online repair assistance: changes between iterations reflect what the policy has learned. Where shown, iteration 0 plays together. Later, each method takes a turn while the others remain frozen in the same row, before the comparison advances to the next selected iteration. The blue outline and captions direct attention to the active evaluation. HUMAN denotes a policy trained with additional demonstrations; DSRL is the reinforcement-learning baseline. On-screen labels identify each method, training iteration, and playback speed.</p>
+        </section>
+        <noscript><p>Enable JavaScript to browse the task video comparisons.</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <p>This page is adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website template</a>. The adapted website layout is licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

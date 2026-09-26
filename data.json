@@ -1,0 +1,1161 @@
+{
+  "evaluationType": "policy-only",
+  "editing": "Shared iteration 0 together where shown; later methods take turns playing in a fixed row while the other panels freeze. 4×/8× context; selected highlights at 1×.",
+  "tasks": [
+    {
+      "id": "stackthree",
+      "shortTitle": "Stacking",
+      "title": "Stack three blocks",
+      "kind": "Multi-stage manipulation",
+      "description": "Pick and place two blocks to build a three-block stack.",
+      "story": "The first update turns a missed placement into a stable three-block stack. The comparison focuses on the final placement, where the shown baseline evaluations still fail.",
+      "movie": {
+        "src": "assets/videos/stackthree-comparison.mp4?v=edb1240fce62",
+        "poster": "assets/posters/stackthree-comparison.jpg?v=20269b3a86c1",
+        "width": 1920,
+        "height": 1080,
+        "duration": 40.834
+      },
+      "chapters": [
+        {
+          "title": "The initial policy misses the first placement",
+          "takeaway": "All methods start from the same task policy. Here it releases the red block beside the base, leaving the later placement unreached.",
+          "start": 0,
+          "end": 10.4,
+          "mode": "simultaneous-initial",
+          "layout": "fixed-row",
+          "phases": []
+        },
+        {
+          "title": "After one update, the policy completes both placements",
+          "takeaway": "The updated Skill-Space Shooting policy builds a stable stack. In these first-iteration baseline evaluations, HUMAN misses the final placement and DSRL disturbs the stack.",
+          "start": 10.4,
+          "end": 40.834,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 1,
+              "takeaway": "After one update, the policy completes both placements.",
+              "terminalLabel": "Stack completed",
+              "terminalCaption": "Both placements succeed; the three-block stack remains standing.",
+              "start": 10.4,
+              "end": 18.434,
+              "terminalStart": 17.134,
+              "segments": [
+                {
+                  "start": 10.4,
+                  "end": 13.034,
+                  "caption": "After one update, the policy completes both placements.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 13.034,
+                  "end": 17.034,
+                  "caption": "The top block stays on the stack",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 17.034,
+                  "end": 17.134,
+                  "caption": "After one update, the policy completes both placements.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 1,
+              "takeaway": "The first placement succeeds, but the final one misses.",
+              "terminalLabel": "Final placement missed",
+              "terminalCaption": "The yellow block lands beside the two-block stack.",
+              "start": 18.434,
+              "end": 29.334000000000003,
+              "terminalStart": 28.034000000000002,
+              "segments": [
+                {
+                  "start": 18.434,
+                  "end": 24.434,
+                  "caption": "The first placement succeeds, but the final one misses.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 24.434,
+                  "end": 28.034000000000002,
+                  "caption": "Final block lands beside the stack",
+                  "highlight": true,
+                  "speed": 1
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 1,
+              "takeaway": "The final placement undoes the earlier progress.",
+              "terminalLabel": "Stack disrupted",
+              "terminalCaption": "The final placement displaces the red block.",
+              "start": 29.334000000000003,
+              "end": 40.835,
+              "terminalStart": 39.535000000000004,
+              "segments": [
+                {
+                  "start": 29.334000000000003,
+                  "end": 35.468,
+                  "caption": "The final placement undoes the earlier progress.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 35.468,
+                  "end": 39.468,
+                  "caption": "Final placement disrupts the stack",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 39.468,
+                  "end": 39.535000000000004,
+                  "caption": "The final placement undoes the earlier progress.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drawer",
+      "shortTitle": "Drawer",
+      "title": "Put away a tape roll",
+      "kind": "Articulated object manipulation",
+      "description": "Open the drawer, place the tape roll inside, and close the drawer.",
+      "story": "Opening the drawer makes the later grasp, placement, and closing stages reachable. These comparisons show which parts of that sequence the learned policies can execute after further training.",
+      "movie": {
+        "src": "assets/videos/drawer-comparison.mp4?v=6c0ca37d8c13",
+        "poster": "assets/posters/drawer-comparison.jpg?v=5e1005092784",
+        "width": 1920,
+        "height": 1080,
+        "duration": 59.103
+      },
+      "chapters": [
+        {
+          "title": "The initial policy cannot open the drawer",
+          "takeaway": "The same initial policy is shown in all three panels. Without opening the drawer, the robot cannot reach the placement or closing stages.",
+          "start": 0,
+          "end": 13.267,
+          "mode": "simultaneous-initial",
+          "layout": "fixed-row",
+          "phases": []
+        },
+        {
+          "title": "One update lets the policy reach the later stages",
+          "takeaway": "Skill-Space Shooting gets the tape into the drawer. HUMAN opens the drawer but misses the tape grasp, while DSRL still does not open it in this evaluation.",
+          "start": 13.267,
+          "end": 35.735,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 1,
+              "takeaway": "One update lets the policy open the drawer and place the tape.",
+              "terminalLabel": "Tape placed",
+              "terminalCaption": "The tape reaches the drawer; a small gap remains after closing.",
+              "start": 13.267,
+              "end": 22.735,
+              "terminalStart": 21.435,
+              "segments": [
+                {
+                  "start": 13.267,
+                  "end": 15.901,
+                  "caption": "One update lets the policy open the drawer and place the tape.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 15.901,
+                  "end": 19.901,
+                  "caption": "Tape placed inside the drawer",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 19.901,
+                  "end": 21.435,
+                  "caption": "One update lets the policy open the drawer and place the tape.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 1,
+              "takeaway": "Opening succeeds; the tape grasp is now the obstacle.",
+              "terminalLabel": "Grasp missed",
+              "terminalCaption": "The drawer opens, but the tape remains on the table.",
+              "start": 22.735,
+              "end": 30.669,
+              "terminalStart": 29.369,
+              "segments": [
+                {
+                  "start": 22.735,
+                  "end": 24.869,
+                  "caption": "Opening succeeds; the tape grasp is now the obstacle.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 24.869,
+                  "end": 28.869,
+                  "caption": "The grasp leaves the tape behind",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 28.869,
+                  "end": 29.369,
+                  "caption": "Opening succeeds; the tape grasp is now the obstacle.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 1,
+              "takeaway": "The policy still cannot reach the placement stage.",
+              "terminalLabel": "Drawer still shut",
+              "terminalCaption": "The gripper retreats without opening the drawer.",
+              "start": 30.669,
+              "end": 35.736000000000004,
+              "terminalStart": 34.43600000000001,
+              "segments": [
+                {
+                  "start": 30.669,
+                  "end": 34.436,
+                  "caption": "The policy still cannot reach the placement stage.",
+                  "highlight": false,
+                  "speed": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "The policy opens, loads, and closes the drawer",
+          "takeaway": "The Skill-Space Shooting policy now opens, places, and closes. DSRL reaches the open drawer but misses the tape grasp; HUMAN repeats its earlier grasp failure in this selected later evaluation.",
+          "start": 35.735,
+          "end": 59.102999999999994,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 3,
+              "takeaway": "The later policy completes the closing stage too.",
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The tape is inside and the drawer closes.",
+              "start": 35.735,
+              "end": 45.069,
+              "terminalStart": 43.769000000000005,
+              "segments": [
+                {
+                  "start": 35.735,
+                  "end": 40.102,
+                  "caption": "The later policy completes the closing stage too.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 40.102,
+                  "end": 43.602,
+                  "caption": "The drawer closes with the tape inside",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 43.602,
+                  "end": 43.769,
+                  "caption": "The later policy completes the closing stage too.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 3,
+              "takeaway": "The earlier tape-grasp failure recurs.",
+              "terminalLabel": "Grasp missed again",
+              "terminalCaption": "The tape remains on the table despite the open drawer.",
+              "start": 45.069,
+              "end": 49.569,
+              "terminalStart": 48.269000000000005,
+              "segments": [
+                {
+                  "start": 45.069,
+                  "end": 48.269000000000005,
+                  "caption": "The earlier tape-grasp failure recurs.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 3,
+              "takeaway": "The policy now opens the drawer but misses the tape grasp.",
+              "terminalLabel": "Grasp missed",
+              "terminalCaption": "The drawer opens, but the tape remains outside.",
+              "start": 49.569,
+              "end": 59.103,
+              "terminalStart": 57.803000000000004,
+              "segments": [
+                {
+                  "start": 49.569,
+                  "end": 52.703,
+                  "caption": "The policy now opens the drawer but misses the tape grasp.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 52.703,
+                  "end": 56.703,
+                  "caption": "Drawer opens, but the grasp misses",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 56.703,
+                  "end": 57.803000000000004,
+                  "caption": "The policy now opens the drawer but misses the tape grasp.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "shortTitle": "Coffee",
+      "title": "Prepare an iced drink",
+      "kind": "Long-horizon manipulation",
+      "description": "Pour milk and coffee into the glass, then add ice and a stirrer.",
+      "story": "As the policy reaches later stages, a stirrer-placement failure becomes visible. The last chapter compares our iteration 5 with HUMAN iteration 6 and DSRL iteration 5; each evaluation displays its actual iteration.",
+      "movie": {
+        "src": "assets/videos/coffee-comparison.mp4?v=972bd8dc23c9",
+        "poster": "assets/posters/coffee-comparison.jpg?v=295be0ca472f",
+        "width": 1920,
+        "height": 1080,
+        "duration": 137.17
+      },
+      "chapters": [
+        {
+          "title": "First-iteration pours",
+          "takeaway": "Ours and HUMAN spill milk beside the glass. DSRL pours milk into the glass, but its rollout is stopped early for safety during the bottle return.",
+          "start": 0,
+          "end": 31.835,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 1,
+              "takeaway": "The first pour misses the glass.",
+              "terminalLabel": "Milk spill",
+              "terminalCaption": "Milk spills; the rollout stops before the later stages.",
+              "start": 0,
+              "end": 11.468,
+              "terminalStart": 10.168,
+              "segments": [
+                {
+                  "start": 0,
+                  "end": 1.634,
+                  "caption": "The first pour misses the glass.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 1.634,
+                  "end": 6.634,
+                  "caption": "Milk spills beside the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 6.634,
+                  "end": 10.168,
+                  "caption": "The first pour misses the glass.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 1,
+              "takeaway": "Milk spills; the next cup grasp also fails.",
+              "terminalLabel": "Milk spill; cup not lifted",
+              "terminalCaption": "Milk spills, and the later coffee-cup grasp does not lift the cup.",
+              "start": 11.468,
+              "end": 18.701999999999998,
+              "terminalStart": 17.401999999999997,
+              "segments": [
+                {
+                  "start": 11.468,
+                  "end": 17.402,
+                  "caption": "Milk spills; the next cup grasp also fails.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 1,
+              "takeaway": "Milk reaches the glass, but execution stops early for safety.",
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "Policy stopped early for safety during the bottle return.",
+              "start": 18.701999999999998,
+              "end": 31.836,
+              "terminalStart": 30.535999999999998,
+              "segments": [
+                {
+                  "start": 18.701999999999998,
+                  "end": 24.468999999999998,
+                  "caption": "Milk reaches the glass, but execution stops early for safety.",
+                  "highlight": false,
+                  "speed": 4
+                },
+                {
+                  "start": 24.468999999999998,
+                  "end": 28.968999999999998,
+                  "caption": "Milk reaches the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 28.968999999999998,
+                  "end": 30.535999999999998,
+                  "caption": "Milk reaches the glass, but execution stops early for safety.",
+                  "highlight": false,
+                  "speed": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Reaching the last stage reveals a new failure",
+          "takeaway": "Ours now reaches the stirrer stage, but the stick lands on the table. HUMAN spills coffee; DSRL is stopped early for safety at the coffee-cup approach.",
+          "start": 31.835,
+          "end": 77.436,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 3,
+              "takeaway": "The policy reaches the last stage, revealing a new placement error.",
+              "terminalLabel": "Stirrer placement missed",
+              "terminalCaption": "The ingredients reach the glass, but the stirrer lands beside it.",
+              "start": 31.835,
+              "end": 55.569,
+              "terminalStart": 54.269000000000005,
+              "segments": [
+                {
+                  "start": 31.835,
+                  "end": 49.135000000000005,
+                  "caption": "The policy reaches the last stage, revealing a new placement error.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 49.135000000000005,
+                  "end": 54.269000000000005,
+                  "caption": "Stirring stick lands beside the glass",
+                  "highlight": true,
+                  "speed": 1
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 3,
+              "takeaway": "The policy reaches coffee, but the pour misses the glass.",
+              "terminalLabel": "Coffee spill",
+              "terminalCaption": "Coffee spills; the rollout stops before adding ice or the stirrer.",
+              "start": 55.569,
+              "end": 70.269,
+              "terminalStart": 68.96900000000001,
+              "segments": [
+                {
+                  "start": 55.569,
+                  "end": 61.869,
+                  "caption": "The policy reaches coffee, but the pour misses the glass.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 61.869,
+                  "end": 66.869,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 66.869,
+                  "end": 68.969,
+                  "caption": "The policy reaches coffee, but the pour misses the glass.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 3,
+              "takeaway": "Execution stops for safety at the coffee-cup approach.",
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "Policy stopped early for safety before lifting the coffee cup.",
+              "start": 70.269,
+              "end": 77.436,
+              "terminalStart": 76.13600000000001,
+              "segments": [
+                {
+                  "start": 70.269,
+                  "end": 76.13600000000001,
+                  "caption": "Execution stops for safety at the coffee-cup approach.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "A later policy places the stirrer in the glass",
+          "takeaway": "Ours iteration 5 places the stirrer in the prepared drink. HUMAN iteration 6 also reaches the final placement, but its coffee spill persists. DSRL iteration 5 spills coffee and is stopped early for safety. HUMAN has no iteration 5 recording.",
+          "start": 77.436,
+          "end": 137.17000000000002,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 5,
+              "takeaway": "The later policy completes the pours and final stirrer placement.",
+              "terminalLabel": "Task completed",
+              "terminalCaption": "Milk, coffee, ice, and the stirrer reach the glass.",
+              "start": 77.436,
+              "end": 101.60300000000001,
+              "terminalStart": 100.30300000000001,
+              "segments": [
+                {
+                  "start": 77.436,
+                  "end": 79.436,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 79.436,
+                  "end": 83.436,
+                  "caption": "Milk now pours into the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 83.436,
+                  "end": 95.736,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 95.736,
+                  "end": 100.236,
+                  "caption": "Stirring stick remains in the drink",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 100.236,
+                  "end": 100.303,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 6,
+              "takeaway": "Later stages complete, but the coffee-pour error persists.",
+              "terminalLabel": "Coffee spill remains",
+              "terminalCaption": "The stirrer reaches the drink, but the earlier coffee spill remains.",
+              "start": 101.60300000000001,
+              "end": 122.37,
+              "terminalStart": 121.07000000000001,
+              "segments": [
+                {
+                  "start": 101.60300000000001,
+                  "end": 108.60300000000001,
+                  "caption": "Later stages complete, but the coffee-pour error persists.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 108.60300000000001,
+                  "end": 112.60300000000001,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 112.60300000000001,
+                  "end": 121.07000000000001,
+                  "caption": "Later stages complete, but the coffee-pour error persists.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 5,
+              "takeaway": "Coffee spills; the policy is stopped before the later stages.",
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "After spilling coffee, the policy is stopped early for safety.",
+              "start": 122.37,
+              "end": 137.171,
+              "terminalStart": 135.87099999999998,
+              "segments": [
+                {
+                  "start": 122.37,
+                  "end": 130.137,
+                  "caption": "Coffee spills; the policy is stopped before the later stages.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 130.137,
+                  "end": 135.137,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 135.137,
+                  "end": 135.871,
+                  "caption": "Coffee spills; the policy is stopped before the later stages.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweep",
+      "shortTitle": "Sweeping",
+      "title": "Sweep and return the broom",
+      "kind": "Dynamic contact-rich manipulation",
+      "description": "Take the broom from its stand, sweep six blocks into the marked area, and hang the broom back up.",
+      "story": "The policy first improves block collection, then learns to return the broom. The later comparison highlights the return itself; a block remains at the tape boundary in the shown Skill-Space Shooting evaluation.",
+      "movie": {
+        "src": "assets/videos/sweep-comparison.mp4?v=abc591cefa90",
+        "poster": "assets/posters/sweep-comparison.jpg?v=78f525959757",
+        "width": 1920,
+        "height": 1080,
+        "duration": 71.303
+      },
+      "chapters": [
+        {
+          "title": "The policy leaves a block behind",
+          "takeaway": "Ours gathers five blocks but leaves the red block outside.",
+          "start": 0,
+          "end": 22.268,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 1,
+              "takeaway": "A missed block prevents complete collection.",
+              "terminalLabel": "One block left outside",
+              "terminalCaption": "The red block remains outside; the broom is still held.",
+              "start": 0,
+              "end": 11.634,
+              "terminalStart": 10.334,
+              "segments": [
+                {
+                  "start": 0,
+                  "end": 6.367,
+                  "caption": "A missed block prevents complete collection.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 6.367,
+                  "end": 10.167,
+                  "caption": "Red block remains outside",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 10.167,
+                  "end": 10.334,
+                  "caption": "A missed block prevents complete collection.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 1,
+              "takeaway": "A block remains outside the target after sweeping.",
+              "terminalLabel": "Collection incomplete",
+              "terminalCaption": "The purple block remains outside; broom return is incomplete.",
+              "start": 11.634,
+              "end": 19.268,
+              "terminalStart": 17.968,
+              "segments": [
+                {
+                  "start": 11.634,
+                  "end": 17.968,
+                  "caption": "A block remains outside the target after sweeping.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 1,
+              "takeaway": "The pickup failure prevents the policy from reaching sweeping.",
+              "terminalLabel": "Pickup failed",
+              "terminalCaption": "The broom remains at the stand; sweeping never begins.",
+              "start": 19.268,
+              "end": 22.268,
+              "terminalStart": 20.968,
+              "segments": [
+                {
+                  "start": 19.268,
+                  "end": 20.968,
+                  "caption": "The pickup failure prevents the policy from reaching sweeping.",
+                  "highlight": false,
+                  "speed": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "It gathers the blocks, but drops the broom",
+          "takeaway": "Ours collects the last block, then drops the broom during its return.",
+          "start": 22.268,
+          "end": 45.869,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 2,
+              "takeaway": "Collection now succeeds; returning the broom is the next difficulty.",
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "All six blocks are gathered, but the broom falls during return.",
+              "start": 22.268,
+              "end": 36.735,
+              "terminalStart": 35.435,
+              "segments": [
+                {
+                  "start": 22.268,
+                  "end": 27.668,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 27.668,
+                  "end": 31.668,
+                  "caption": "Collects the last block",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 31.668,
+                  "end": 32.335,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 32.335,
+                  "end": 35.335,
+                  "caption": "Broom falls during return",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 35.335,
+                  "end": 35.435,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 2,
+              "takeaway": "Both collection and broom return remain incomplete.",
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "Two blocks remain outside, and the broom falls beside the stand.",
+              "start": 36.735,
+              "end": 42.402,
+              "terminalStart": 41.102000000000004,
+              "segments": [
+                {
+                  "start": 36.735,
+                  "end": 41.102,
+                  "caption": "Both collection and broom return remain incomplete.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 2,
+              "takeaway": "The policy still fails during broom pickup.",
+              "terminalLabel": "Stand tipped",
+              "terminalCaption": "The pickup tips the stand before sweeping begins.",
+              "start": 42.402,
+              "end": 45.869,
+              "terminalStart": 44.569,
+              "segments": [
+                {
+                  "start": 42.402,
+                  "end": 44.569,
+                  "caption": "The policy still fails during broom pickup.",
+                  "highlight": false,
+                  "speed": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "The later policy returns the broom to its stand",
+          "takeaway": "Ours leaves the broom hanging; both shown baseline returns drop it.",
+          "start": 45.869,
+          "end": 71.303,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "o",
+              "methodLabel": "Skill-Space Shooting",
+              "iteration": 4,
+              "takeaway": "The later policy returns the broom without dropping it.",
+              "terminalLabel": "Broom returned",
+              "terminalCaption": "The broom stays on its hanger after the gripper withdraws.",
+              "start": 45.869,
+              "end": 54.769999999999996,
+              "terminalStart": 53.47,
+              "segments": [
+                {
+                  "start": 45.869,
+                  "end": 50.736,
+                  "caption": "The later policy returns the broom without dropping it.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 50.736,
+                  "end": 53.47,
+                  "caption": "Broom stays on the hanger",
+                  "highlight": true,
+                  "speed": 1
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "methodLabel": "HUMAN",
+              "iteration": 4,
+              "takeaway": "The broom-return failure recurs in this later evaluation.",
+              "terminalLabel": "Broom dropped again",
+              "terminalCaption": "The purple block remains outside; the broom drops beside the stand.",
+              "start": 54.769999999999996,
+              "end": 63.37,
+              "terminalStart": 62.07,
+              "segments": [
+                {
+                  "start": 54.769999999999996,
+                  "end": 59.37,
+                  "caption": "The broom-return failure recurs in this later evaluation.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 59.37,
+                  "end": 61.87,
+                  "caption": "Broom drops again",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 61.87,
+                  "end": 62.07,
+                  "caption": "The broom-return failure recurs in this later evaluation.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "methodLabel": "DSRL",
+              "iteration": 4,
+              "takeaway": "The policy reaches sweeping but misses collection and return.",
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "Two blocks remain outside; the broom falls during return.",
+              "start": 63.37,
+              "end": 71.304,
+              "terminalStart": 70.004,
+              "segments": [
+                {
+                  "start": 63.37,
+                  "end": 67.77,
+                  "caption": "The policy reaches sweeping but misses collection and return.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 67.77,
+                  "end": 69.97,
+                  "caption": "Broom drops; two blocks remain out",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 69.97,
+                  "end": 70.004,
+                  "caption": "The policy reaches sweeping but misses collection and return.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sponge",
+      "shortTitle": "Sponge Wiping",
+      "title": "Wipe and put away the sponge",
+      "kind": "Transfer to a new task",
+      "description": "Pick up the sponge, wipe the white bowl, and place the sponge in the receiving bowl.",
+      "story": "Both conditions run the same improvement loop. Sharing uses 70 new skill demonstrations (10 pick, 50 wipe, 10 place), compared with 150 without sharing (50 per skill). The videos show both task policies improving; sharing reduces the new teaching used to prepare the corrective skills.",
+      "movie": {
+        "src": "assets/videos/sponge-comparison.mp4?v=01f397cff46b",
+        "poster": "assets/posters/sponge-comparison.jpg?v=fd2436d8925d",
+        "width": 1280,
+        "height": 1080,
+        "duration": 32.568
+      },
+      "chapters": [
+        {
+          "title": "Early policies miss the pickup or final placement",
+          "takeaway": "With sharing drops the sponge; without sharing leaves it on the white bowl.",
+          "start": 0,
+          "end": 13.901,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "s",
+              "methodLabel": "With sharing",
+              "iteration": 1,
+              "takeaway": "With sharing: the early policy loses its grasp.",
+              "terminalLabel": "Sponge dropped",
+              "terminalCaption": "The sponge slips after pickup and falls beside the bowl.",
+              "start": 0,
+              "end": 6.167,
+              "terminalStart": 4.867,
+              "segments": [
+                {
+                  "start": 0,
+                  "end": 2.1,
+                  "caption": "With sharing: the early policy loses its grasp.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 2.1,
+                  "end": 4.867,
+                  "caption": "Sponge slips after pickup",
+                  "highlight": true,
+                  "speed": 1
+                }
+              ]
+            },
+            {
+              "method": "o",
+              "methodLabel": "Without sharing",
+              "iteration": 1,
+              "takeaway": "Without sharing: wiping succeeds, but the final transfer fails.",
+              "terminalLabel": "Transfer incomplete",
+              "terminalCaption": "The sponge stays on the white bowl instead of reaching storage.",
+              "start": 6.167,
+              "end": 13.901,
+              "terminalStart": 12.600999999999999,
+              "segments": [
+                {
+                  "start": 6.167,
+                  "end": 8.767,
+                  "caption": "Without sharing: wiping succeeds, but the final transfer fails.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 8.767,
+                  "end": 12.466999999999999,
+                  "caption": "Sponge left on the white bowl",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 12.467,
+                  "end": 12.601,
+                  "caption": "Without sharing: wiping succeeds, but the final transfer fails.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "After the next update, both finish the task",
+          "takeaway": "Both shown policies wipe the white bowl and leave the sponge in the receiving bowl.",
+          "start": 13.901,
+          "end": 32.568,
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "phases": [
+            {
+              "method": "s",
+              "methodLabel": "With sharing",
+              "iteration": 2,
+              "takeaway": "With sharing: the next policy maintains its grasp and completes the task.",
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The policy wipes the bowl and transfers the sponge to storage.",
+              "start": 13.901,
+              "end": 22.901,
+              "terminalStart": 21.601,
+              "segments": [
+                {
+                  "start": 13.901,
+                  "end": 17.601,
+                  "caption": "With sharing: the next policy maintains its grasp and completes the task.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 17.601,
+                  "end": 21.401,
+                  "caption": "Sponge placed in receiving bowl",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 21.401,
+                  "end": 21.601,
+                  "caption": "With sharing: the next policy maintains its grasp and completes the task.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            },
+            {
+              "method": "o",
+              "methodLabel": "Without sharing",
+              "iteration": 2,
+              "takeaway": "Without sharing: the next policy also completes the final transfer.",
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The policy wipes the bowl and transfers the sponge to storage.",
+              "start": 22.901,
+              "end": 32.568,
+              "terminalStart": 31.267999999999997,
+              "segments": [
+                {
+                  "start": 22.901,
+                  "end": 26.868,
+                  "caption": "Without sharing: the next policy also completes the final transfer.",
+                  "highlight": false,
+                  "speed": 8
+                },
+                {
+                  "start": 26.868,
+                  "end": 31.067999999999998,
+                  "caption": "Sponge placed in receiving bowl",
+                  "highlight": true,
+                  "speed": 1
+                },
+                {
+                  "start": 31.067999999999998,
+                  "end": 31.267999999999997,
+                  "caption": "Without sharing: the next policy also completes the final transfer.",
+                  "highlight": false,
+                  "speed": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

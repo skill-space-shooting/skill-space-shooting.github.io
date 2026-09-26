@@ -1,0 +1,1721 @@
+{
+  "evaluationType": "policy-only",
+  "editing": "Full selected source intervals retain temporal order. Context runs at 4× or 8× and specified focus windows at 1×. Methods stay in a fixed row. Shared initial policies play together; later only the active method moves within each chapter. Waiting methods hold their first frame, and finished methods hold their final frame. Each evaluation names its method, iteration, and speed, then briefly holds the final frame with its outcome. Safety stops are labeled explicitly.",
+  "tasks": {
+    "stackthree": {
+      "movie": {
+        "src": "assets/videos/stackthree-comparison.mp4?v=edb1240fce62",
+        "poster": "assets/posters/stackthree-comparison.jpg?v=20269b3a86c1",
+        "width": 1920,
+        "height": 1080,
+        "duration": 40.834
+      },
+      "chapters": [
+        {
+          "title": "The initial policy misses the first placement",
+          "mode": "simultaneous-initial",
+          "layout": "fixed-row",
+          "start": 0,
+          "end": 10.4,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 0,
+              "terminalLabel": "Placement missed",
+              "terminalCaption": "The red block lands beside the base; the stack cannot continue.",
+              "terminalHold": 0,
+              "source": "full_task_videos/stackthree/iter0/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 10.4,
+              "editedDuration": 9.1,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 18.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 4.5,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 18.0,
+                  "sourceEnd": 22.0,
+                  "speed": 1,
+                  "editedStart": 4.5,
+                  "editedDuration": 4.0,
+                  "caption": "First placement misses the base",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 22.0,
+                  "sourceEnd": 24.434,
+                  "speed": 4,
+                  "editedStart": 8.5,
+                  "editedDuration": 0.6,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 0,
+              "terminalLabel": "Placement missed",
+              "terminalCaption": "The red block lands beside the base; the stack cannot continue.",
+              "terminalHold": 0,
+              "source": "full_task_videos/stackthree/iter0/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 10.4,
+              "editedDuration": 9.1,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 18.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 4.5,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 18.0,
+                  "sourceEnd": 22.0,
+                  "speed": 1,
+                  "editedStart": 4.5,
+                  "editedDuration": 4.0,
+                  "caption": "First placement misses the base",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 22.0,
+                  "sourceEnd": 24.434,
+                  "speed": 4,
+                  "editedStart": 8.5,
+                  "editedDuration": 0.6,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 0,
+              "terminalLabel": "Placement missed",
+              "terminalCaption": "The red block lands beside the base; the stack cannot continue.",
+              "terminalHold": 0,
+              "source": "full_task_videos/stackthree/iter0/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 10.4,
+              "editedDuration": 9.1,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 18.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 4.5,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 18.0,
+                  "sourceEnd": 22.0,
+                  "speed": 1,
+                  "editedStart": 4.5,
+                  "editedDuration": 4.0,
+                  "caption": "First placement misses the base",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 22.0,
+                  "sourceEnd": 24.434,
+                  "speed": 4,
+                  "editedStart": 8.5,
+                  "editedDuration": 0.6,
+                  "caption": "The initial policy misses the first placement.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "After one update, the policy completes both placements",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 10.4,
+          "end": 40.834,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 1,
+              "terminalLabel": "Stack completed",
+              "terminalCaption": "Both placements succeed; the three-block stack remains standing.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/stackthree/iter1_o/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 10.4,
+              "end": 18.434,
+              "editedDuration": 8.034,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 21.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.634,
+                  "caption": "After one update, the policy completes both placements.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 21.0,
+                  "sourceEnd": 25.0,
+                  "speed": 1,
+                  "editedStart": 2.634,
+                  "editedDuration": 4.0,
+                  "caption": "The top block stays on the stack",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 25.0,
+                  "sourceEnd": 25.7,
+                  "speed": 8,
+                  "editedStart": 6.634,
+                  "editedDuration": 0.1,
+                  "caption": "After one update, the policy completes both placements.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 1,
+              "terminalLabel": "Final placement missed",
+              "terminalCaption": "The yellow block lands beside the two-block stack.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/stackthree/iter1_h/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 18.434,
+              "end": 29.334000000000003,
+              "editedDuration": 10.9,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 48.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 6.0,
+                  "caption": "The first placement succeeds, but the final one misses.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 48.0,
+                  "sourceEnd": 51.6,
+                  "speed": 1,
+                  "editedStart": 6.0,
+                  "editedDuration": 3.6,
+                  "caption": "Final block lands beside the stack",
+                  "highlight": true
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 1,
+              "terminalLabel": "Stack disrupted",
+              "terminalCaption": "The final placement displaces the red block.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/stackthree/iter1_r/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 29.334000000000003,
+              "end": 40.835,
+              "editedDuration": 11.501,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 49.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 6.134,
+                  "caption": "The final placement undoes the earlier progress.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 49.0,
+                  "sourceEnd": 53.0,
+                  "speed": 1,
+                  "editedStart": 6.134,
+                  "editedDuration": 4.0,
+                  "caption": "Final placement disrupts the stack",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 53.0,
+                  "sourceEnd": 53.534,
+                  "speed": 8,
+                  "editedStart": 10.134,
+                  "editedDuration": 0.067,
+                  "caption": "The final placement undoes the earlier progress.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "drawer": {
+      "movie": {
+        "src": "assets/videos/drawer-comparison.mp4?v=6c0ca37d8c13",
+        "poster": "assets/posters/drawer-comparison.jpg?v=5e1005092784",
+        "width": 1920,
+        "height": 1080,
+        "duration": 59.103
+      },
+      "chapters": [
+        {
+          "title": "The initial policy cannot open the drawer",
+          "mode": "simultaneous-initial",
+          "layout": "fixed-row",
+          "start": 0,
+          "end": 13.267,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 0,
+              "terminalLabel": "Drawer still shut",
+              "terminalCaption": "The drawer remains shut, preventing the later task stages.",
+              "terminalHold": 0,
+              "source": "full_task_videos/drawer/iter0/0.mp4",
+              "crop": null,
+              "start": 0,
+              "end": 13.266666666666667,
+              "editedDuration": 11.934,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 24.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 6.0,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 24.0,
+                  "sourceEnd": 28.0,
+                  "speed": 1,
+                  "editedStart": 6.0,
+                  "editedDuration": 4.0,
+                  "caption": "The drawer stays shut",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 28.0,
+                  "sourceEnd": 35.734,
+                  "speed": 4,
+                  "editedStart": 10.0,
+                  "editedDuration": 1.934,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 0,
+              "terminalLabel": "Drawer still shut",
+              "terminalCaption": "The drawer remains shut, preventing the later task stages.",
+              "terminalHold": 0,
+              "source": "full_task_videos/drawer/iter0/0.mp4",
+              "crop": null,
+              "start": 0,
+              "end": 13.266666666666667,
+              "editedDuration": 11.934,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 24.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 6.0,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 24.0,
+                  "sourceEnd": 28.0,
+                  "speed": 1,
+                  "editedStart": 6.0,
+                  "editedDuration": 4.0,
+                  "caption": "The drawer stays shut",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 28.0,
+                  "sourceEnd": 35.734,
+                  "speed": 4,
+                  "editedStart": 10.0,
+                  "editedDuration": 1.934,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 0,
+              "terminalLabel": "Drawer still shut",
+              "terminalCaption": "The drawer remains shut, preventing the later task stages.",
+              "terminalHold": 0,
+              "source": "full_task_videos/drawer/iter0/0.mp4",
+              "crop": null,
+              "start": 0,
+              "end": 13.266666666666667,
+              "editedDuration": 11.934,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 24.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 6.0,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 24.0,
+                  "sourceEnd": 28.0,
+                  "speed": 1,
+                  "editedStart": 6.0,
+                  "editedDuration": 4.0,
+                  "caption": "The drawer stays shut",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 28.0,
+                  "sourceEnd": 35.734,
+                  "speed": 4,
+                  "editedStart": 10.0,
+                  "editedDuration": 1.934,
+                  "caption": "The initial policy cannot open the drawer.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "One update lets the policy reach the later stages",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 13.267,
+          "end": 35.735,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 1,
+              "terminalLabel": "Tape placed",
+              "terminalCaption": "The tape reaches the drawer; a small gap remains after closing.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter1_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 13.267,
+              "end": 22.735,
+              "editedDuration": 9.468,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 21.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.634,
+                  "caption": "One update lets the policy open the drawer and place the tape.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 21.0,
+                  "sourceEnd": 25.0,
+                  "speed": 1,
+                  "editedStart": 2.634,
+                  "editedDuration": 4.0,
+                  "caption": "Tape placed inside the drawer",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 25.0,
+                  "sourceEnd": 37.234,
+                  "speed": 8,
+                  "editedStart": 6.634,
+                  "editedDuration": 1.534,
+                  "caption": "One update lets the policy open the drawer and place the tape.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 1,
+              "terminalLabel": "Grasp missed",
+              "terminalCaption": "The drawer opens, but the tape remains on the table.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter1_h/1.mp4",
+              "crop": {
+                "x": 508,
+                "y": 70,
+                "width": 1852,
+                "height": 1390
+              },
+              "start": 22.735,
+              "end": 30.669,
+              "editedDuration": 7.934,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 17.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.134,
+                  "caption": "Opening succeeds; the tape grasp is now the obstacle.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 17.0,
+                  "sourceEnd": 21.0,
+                  "speed": 1,
+                  "editedStart": 2.134,
+                  "editedDuration": 4.0,
+                  "caption": "The grasp leaves the tape behind",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 21.0,
+                  "sourceEnd": 25.1,
+                  "speed": 8,
+                  "editedStart": 6.134,
+                  "editedDuration": 0.5,
+                  "caption": "Opening succeeds; the tape grasp is now the obstacle.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 1,
+              "terminalLabel": "Drawer still shut",
+              "terminalCaption": "The gripper retreats without opening the drawer.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter1_r/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 30.669,
+              "end": 35.736000000000004,
+              "editedDuration": 5.067,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 15.1,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 3.767,
+                  "caption": "The policy still cannot reach the placement stage.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "The policy opens, loads, and closes the drawer",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 35.735,
+          "end": 59.102999999999994,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 3,
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The tape is inside and the drawer closes.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter3_o/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 35.735,
+              "end": 45.069,
+              "editedDuration": 9.334,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 35.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 4.367,
+                  "caption": "The later policy completes the closing stage too.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 35.0,
+                  "sourceEnd": 38.5,
+                  "speed": 1,
+                  "editedStart": 4.367,
+                  "editedDuration": 3.5,
+                  "caption": "The drawer closes with the tape inside",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 38.5,
+                  "sourceEnd": 39.7,
+                  "speed": 8,
+                  "editedStart": 7.867,
+                  "editedDuration": 0.167,
+                  "caption": "The later policy completes the closing stage too.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 3,
+              "terminalLabel": "Grasp missed again",
+              "terminalCaption": "The tape remains on the table despite the open drawer.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter3_h/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 45.069,
+              "end": 49.569,
+              "editedDuration": 4.5,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 25.7,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 3.2,
+                  "caption": "The earlier tape-grasp failure recurs.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 3,
+              "terminalLabel": "Grasp missed",
+              "terminalCaption": "The drawer opens, but the tape remains outside.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/drawer/iter3_r/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 49.569,
+              "end": 59.103,
+              "editedDuration": 9.534,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 25.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 3.134,
+                  "caption": "The policy now opens the drawer but misses the tape grasp.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 25.0,
+                  "sourceEnd": 29.0,
+                  "speed": 1,
+                  "editedStart": 3.134,
+                  "editedDuration": 4.0,
+                  "caption": "Drawer opens, but the grasp misses",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 29.0,
+                  "sourceEnd": 37.9,
+                  "speed": 8,
+                  "editedStart": 7.134,
+                  "editedDuration": 1.1,
+                  "caption": "The policy now opens the drawer but misses the tape grasp.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "coffee": {
+      "movie": {
+        "src": "assets/videos/coffee-comparison.mp4?v=972bd8dc23c9",
+        "poster": "assets/posters/coffee-comparison.jpg?v=295be0ca472f",
+        "width": 1920,
+        "height": 1080,
+        "duration": 137.17
+      },
+      "chapters": [
+        {
+          "title": "First-iteration pours",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 0,
+          "end": 31.835,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 1,
+              "terminalLabel": "Milk spill",
+              "terminalCaption": "Milk spills; the rollout stops before the later stages.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter1_o/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 11.468,
+              "editedDuration": 11.468,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 13.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 1.634,
+                  "caption": "The first pour misses the glass.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 13.0,
+                  "sourceEnd": 18.0,
+                  "speed": 1,
+                  "editedStart": 1.634,
+                  "editedDuration": 5.0,
+                  "caption": "Milk spills beside the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 18.0,
+                  "sourceEnd": 46.133333,
+                  "speed": 8,
+                  "editedStart": 6.634,
+                  "editedDuration": 3.534,
+                  "caption": "The first pour misses the glass.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 1,
+              "terminalLabel": "Milk spill; cup not lifted",
+              "terminalCaption": "Milk spills, and the later coffee-cup grasp does not lift the cup.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter1_h/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 11.468,
+              "end": 18.701999999999998,
+              "editedDuration": 7.234,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 47.433333,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 5.934,
+                  "caption": "Milk spills; the next cup grasp also fails.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 1,
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "Policy stopped early for safety during the bottle return.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter1_r/0.mp4",
+              "crop": {
+                "x": 276,
+                "y": 184,
+                "width": 648,
+                "height": 488
+              },
+              "start": 18.701999999999998,
+              "end": 31.836,
+              "editedDuration": 13.134,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 23.0,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 5.767,
+                  "caption": "Milk reaches the glass, but execution stops early for safety.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 23.0,
+                  "sourceEnd": 27.5,
+                  "speed": 1,
+                  "editedStart": 5.767,
+                  "editedDuration": 4.5,
+                  "caption": "Milk reaches the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 27.5,
+                  "sourceEnd": 33.766667,
+                  "speed": 4,
+                  "editedStart": 10.267,
+                  "editedDuration": 1.567,
+                  "caption": "Milk reaches the glass, but execution stops early for safety.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Reaching the last stage reveals a new failure",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 31.835,
+          "end": 77.436,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 3,
+              "terminalLabel": "Stirrer placement missed",
+              "terminalCaption": "The ingredients reach the glass, but the stirrer lands beside it.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter3_o/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 31.835,
+              "end": 55.569,
+              "editedDuration": 23.734,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 138.3,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 17.3,
+                  "caption": "The policy reaches the last stage, revealing a new placement error.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 138.3,
+                  "sourceEnd": 143.433333,
+                  "speed": 1,
+                  "editedStart": 17.3,
+                  "editedDuration": 5.134,
+                  "caption": "Stirring stick lands beside the glass",
+                  "highlight": true
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 3,
+              "terminalLabel": "Coffee spill",
+              "terminalCaption": "Coffee spills; the rollout stops before adding ice or the stirrer.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter3_h/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 55.569,
+              "end": 70.269,
+              "editedDuration": 14.7,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 50.5,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 6.3,
+                  "caption": "The policy reaches coffee, but the pour misses the glass.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 50.5,
+                  "sourceEnd": 55.5,
+                  "speed": 1,
+                  "editedStart": 6.3,
+                  "editedDuration": 5.0,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 55.5,
+                  "sourceEnd": 72.233333,
+                  "speed": 8,
+                  "editedStart": 11.3,
+                  "editedDuration": 2.1,
+                  "caption": "The policy reaches coffee, but the pour misses the glass.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 3,
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "Policy stopped early for safety before lifting the coffee cup.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter3_r/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 70.269,
+              "end": 77.436,
+              "editedDuration": 7.167,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 46.8,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 5.867,
+                  "caption": "Execution stops for safety at the coffee-cup approach.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "A later policy places the stirrer in the glass",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 77.436,
+          "end": 137.17000000000002,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 5,
+              "terminalLabel": "Task completed",
+              "terminalCaption": "Milk, coffee, ice, and the stirrer reach the glass.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter5_o/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 77.436,
+              "end": 101.60300000000001,
+              "editedDuration": 24.167,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 16.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.0,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 16.0,
+                  "sourceEnd": 20.0,
+                  "speed": 1,
+                  "editedStart": 2.0,
+                  "editedDuration": 4.0,
+                  "caption": "Milk now pours into the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 20.0,
+                  "sourceEnd": 118.5,
+                  "speed": 8,
+                  "editedStart": 6.0,
+                  "editedDuration": 12.3,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 118.5,
+                  "sourceEnd": 123.0,
+                  "speed": 1,
+                  "editedStart": 18.3,
+                  "editedDuration": 4.5,
+                  "caption": "Stirring stick remains in the drink",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 123.0,
+                  "sourceEnd": 123.433333,
+                  "speed": 8,
+                  "editedStart": 22.8,
+                  "editedDuration": 0.067,
+                  "caption": "The later policy completes the pours and final stirrer placement.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 6,
+              "terminalLabel": "Coffee spill remains",
+              "terminalCaption": "The stirrer reaches the drink, but the earlier coffee spill remains.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter6_h/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 101.60300000000001,
+              "end": 122.37,
+              "editedDuration": 20.767,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 56.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 7.0,
+                  "caption": "Later stages complete, but the coffee-pour error persists.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 56.0,
+                  "sourceEnd": 60.0,
+                  "speed": 1,
+                  "editedStart": 7.0,
+                  "editedDuration": 4.0,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 60.0,
+                  "sourceEnd": 127.8,
+                  "speed": 8,
+                  "editedStart": 11.0,
+                  "editedDuration": 8.467,
+                  "caption": "Later stages complete, but the coffee-pour error persists.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 5,
+              "terminalLabel": "Safety stop",
+              "terminalCaption": "After spilling coffee, the policy is stopped early for safety.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/coffee/iter5_r/0.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 122.37,
+              "end": 137.171,
+              "editedDuration": 14.801,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 62.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 7.767,
+                  "caption": "Coffee spills; the policy is stopped before the later stages.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 62.0,
+                  "sourceEnd": 67.0,
+                  "speed": 1,
+                  "editedStart": 7.767,
+                  "editedDuration": 5.0,
+                  "caption": "Coffee spills beside the glass",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 67.0,
+                  "sourceEnd": 72.8,
+                  "speed": 8,
+                  "editedStart": 12.767,
+                  "editedDuration": 0.734,
+                  "caption": "Coffee spills; the policy is stopped before the later stages.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sweep": {
+      "movie": {
+        "src": "assets/videos/sweep-comparison.mp4?v=abc591cefa90",
+        "poster": "assets/posters/sweep-comparison.jpg?v=78f525959757",
+        "width": 1920,
+        "height": 1080,
+        "duration": 71.303
+      },
+      "chapters": [
+        {
+          "title": "The policy leaves a block behind",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 0,
+          "end": 22.268,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 1,
+              "terminalLabel": "One block left outside",
+              "terminalCaption": "The red block remains outside; the broom is still held.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter1_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 11.634,
+              "editedDuration": 11.634,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 51.0,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 6.367,
+                  "caption": "A missed block prevents complete collection.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 51.0,
+                  "sourceEnd": 54.8,
+                  "speed": 1,
+                  "editedStart": 6.367,
+                  "editedDuration": 3.8,
+                  "caption": "Red block remains outside",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 54.8,
+                  "sourceEnd": 56.0,
+                  "speed": 8,
+                  "editedStart": 10.167,
+                  "editedDuration": 0.167,
+                  "caption": "A missed block prevents complete collection.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 1,
+              "terminalLabel": "Collection incomplete",
+              "terminalCaption": "The purple block remains outside; broom return is incomplete.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter1_h/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 11.634,
+              "end": 19.268,
+              "editedDuration": 7.634,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 50.6,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 6.334,
+                  "caption": "A block remains outside the target after sweeping.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 1,
+              "terminalLabel": "Pickup failed",
+              "terminalCaption": "The broom remains at the stand; sweeping never begins.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter1_r/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 19.268,
+              "end": 22.268,
+              "editedDuration": 3.0,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 6.734,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 1.7,
+                  "caption": "The pickup failure prevents the policy from reaching sweeping.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "It gathers the blocks, but drops the broom",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 22.268,
+          "end": 45.869,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 2,
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "All six blocks are gathered, but the broom falls during return.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter2_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 22.268,
+              "end": 36.735,
+              "editedDuration": 14.467,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 43.2,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 5.4,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 43.2,
+                  "sourceEnd": 47.2,
+                  "speed": 1,
+                  "editedStart": 5.4,
+                  "editedDuration": 4.0,
+                  "caption": "Collects the last block",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 47.2,
+                  "sourceEnd": 52.4,
+                  "speed": 8,
+                  "editedStart": 9.4,
+                  "editedDuration": 0.667,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 52.4,
+                  "sourceEnd": 55.4,
+                  "speed": 1,
+                  "editedStart": 10.067,
+                  "editedDuration": 3.0,
+                  "caption": "Broom falls during return",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 55.4,
+                  "sourceEnd": 56.1,
+                  "speed": 8,
+                  "editedStart": 13.067,
+                  "editedDuration": 0.1,
+                  "caption": "Collection now succeeds; returning the broom is the next difficulty.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 2,
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "Two blocks remain outside, and the broom falls beside the stand.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter2_h/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 36.735,
+              "end": 42.402,
+              "editedDuration": 5.667,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 34.8,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 4.367,
+                  "caption": "Both collection and broom return remain incomplete.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 2,
+              "terminalLabel": "Stand tipped",
+              "terminalCaption": "The pickup tips the stand before sweeping begins.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter2_r/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 42.402,
+              "end": 45.869,
+              "editedDuration": 3.467,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 8.667,
+                  "speed": 4,
+                  "editedStart": 0,
+                  "editedDuration": 2.167,
+                  "caption": "The policy still fails during broom pickup.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "The later policy returns the broom to its stand",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 45.869,
+          "end": 71.303,
+          "panels": [
+            {
+              "method": "o",
+              "iteration": 4,
+              "terminalLabel": "Broom returned",
+              "terminalCaption": "The broom stays on its hanger after the gripper withdraws.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter4_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 45.869,
+              "end": 54.769999999999996,
+              "editedDuration": 8.901,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 38.8,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 4.867,
+                  "caption": "The later policy returns the broom without dropping it.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 38.8,
+                  "sourceEnd": 41.534,
+                  "speed": 1,
+                  "editedStart": 4.867,
+                  "editedDuration": 2.734,
+                  "caption": "Broom stays on the hanger",
+                  "highlight": true
+                }
+              ]
+            },
+            {
+              "method": "h",
+              "iteration": 4,
+              "terminalLabel": "Broom dropped again",
+              "terminalCaption": "The purple block remains outside; the broom drops beside the stand.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter4_h/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 54.769999999999996,
+              "end": 63.37,
+              "editedDuration": 8.6,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 36.8,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 4.6,
+                  "caption": "The broom-return failure recurs in this later evaluation.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 36.8,
+                  "sourceEnd": 39.3,
+                  "speed": 1,
+                  "editedStart": 4.6,
+                  "editedDuration": 2.5,
+                  "caption": "Broom drops again",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 39.3,
+                  "sourceEnd": 40.934,
+                  "speed": 8,
+                  "editedStart": 7.1,
+                  "editedDuration": 0.2,
+                  "caption": "The broom-return failure recurs in this later evaluation.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "r",
+              "iteration": 4,
+              "terminalLabel": "Broom dropped",
+              "terminalCaption": "Two blocks remain outside; the broom falls during return.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sweep/iter4_r/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 63.37,
+              "end": 71.304,
+              "editedDuration": 7.934,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 35.1,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 4.4,
+                  "caption": "The policy reaches sweeping but misses collection and return.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 35.1,
+                  "sourceEnd": 37.3,
+                  "speed": 1,
+                  "editedStart": 4.4,
+                  "editedDuration": 2.2,
+                  "caption": "Broom drops; two blocks remain out",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 37.3,
+                  "sourceEnd": 37.567,
+                  "speed": 8,
+                  "editedStart": 6.6000000000000005,
+                  "editedDuration": 0.034,
+                  "caption": "The policy reaches sweeping but misses collection and return.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sponge": {
+      "movie": {
+        "src": "assets/videos/sponge-comparison.mp4?v=01f397cff46b",
+        "poster": "assets/posters/sponge-comparison.jpg?v=fd2436d8925d",
+        "width": 1280,
+        "height": 1080,
+        "duration": 32.568
+      },
+      "chapters": [
+        {
+          "title": "Early policies miss the pickup or final placement",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 0,
+          "end": 13.901,
+          "panels": [
+            {
+              "method": "s",
+              "iteration": 1,
+              "terminalLabel": "Sponge dropped",
+              "terminalCaption": "The sponge slips after pickup and falls beside the bowl.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sponge/iter1_s/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 0,
+              "end": 6.167,
+              "editedDuration": 6.167,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 16.8,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.1,
+                  "caption": "With sharing: the early policy loses its grasp.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 16.8,
+                  "sourceEnd": 19.567,
+                  "speed": 1,
+                  "editedStart": 2.1,
+                  "editedDuration": 2.767,
+                  "caption": "Sponge slips after pickup",
+                  "highlight": true
+                }
+              ]
+            },
+            {
+              "method": "o",
+              "iteration": 1,
+              "terminalLabel": "Transfer incomplete",
+              "terminalCaption": "The sponge stays on the white bowl instead of reaching storage.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sponge/iter1_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 6.167,
+              "end": 13.901,
+              "editedDuration": 7.734,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 20.7,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 2.6,
+                  "caption": "Without sharing: wiping succeeds, but the final transfer fails.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 20.7,
+                  "sourceEnd": 24.4,
+                  "speed": 1,
+                  "editedStart": 2.6,
+                  "editedDuration": 3.7,
+                  "caption": "Sponge left on the white bowl",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 24.4,
+                  "sourceEnd": 25.367,
+                  "speed": 8,
+                  "editedStart": 6.300000000000001,
+                  "editedDuration": 0.134,
+                  "caption": "Without sharing: wiping succeeds, but the final transfer fails.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "After the next update, both finish the task",
+          "mode": "sequential",
+          "layout": "fixed-row",
+          "start": 13.901,
+          "end": 32.568,
+          "panels": [
+            {
+              "method": "s",
+              "iteration": 2,
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The policy wipes the bowl and transfers the sponge to storage.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sponge/iter2_s/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 13.901,
+              "end": 22.901,
+              "editedDuration": 9.0,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 29.5,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 3.7,
+                  "caption": "With sharing: the next policy maintains its grasp and completes the task.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 29.5,
+                  "sourceEnd": 33.3,
+                  "speed": 1,
+                  "editedStart": 3.7,
+                  "editedDuration": 3.8,
+                  "caption": "Sponge placed in receiving bowl",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 33.3,
+                  "sourceEnd": 34.767,
+                  "speed": 8,
+                  "editedStart": 7.5,
+                  "editedDuration": 0.2,
+                  "caption": "With sharing: the next policy maintains its grasp and completes the task.",
+                  "highlight": false
+                }
+              ]
+            },
+            {
+              "method": "o",
+              "iteration": 2,
+              "terminalLabel": "Task completed",
+              "terminalCaption": "The policy wipes the bowl and transfers the sponge to storage.",
+              "terminalHold": 1.3,
+              "source": "full_task_videos/sponge/iter2_o/1.mp4",
+              "crop": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 1080
+              },
+              "start": 22.901,
+              "end": 32.568,
+              "editedDuration": 9.667,
+              "segments": [
+                {
+                  "sourceStart": 0,
+                  "sourceEnd": 31.6,
+                  "speed": 8,
+                  "editedStart": 0,
+                  "editedDuration": 3.967,
+                  "caption": "Without sharing: the next policy also completes the final transfer.",
+                  "highlight": false
+                },
+                {
+                  "sourceStart": 31.6,
+                  "sourceEnd": 35.8,
+                  "speed": 1,
+                  "editedStart": 3.967,
+                  "editedDuration": 4.2,
+                  "caption": "Sponge placed in receiving bowl",
+                  "highlight": true
+                },
+                {
+                  "sourceStart": 35.8,
+                  "sourceEnd": 37.367,
+                  "speed": 8,
+                  "editedStart": 8.167,
+                  "editedDuration": 0.2,
+                  "caption": "Without sharing: the next policy also completes the final transfer.",
+                  "highlight": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
